@@ -18,16 +18,16 @@ function Header() {
 
     <div className="w-full bg-appbody h-130 flex flex-col items-center justify-center sticky top-0 z-50 border-b border-gray-300 border-1">
       <div className="w-full pt-5 px-4  flex justify-between items-center text-center">
-        <img src={Back_Icon} alt="back_icon" className="w-5 h-5" />
+        <img src={Back_Icon} alt="back_icon" className="w-5 h-5 cursor-pointer" />
         <div className="flex justify-start flex-grow">
           <div className=" p-2 text-3xl font-bold">{name}</div>
         </div>
-        <img src={Edit_Icon} alt="edit_icon" className="w-5 h-5" />
+        <img src={Edit_Icon} alt="edit_icon" className="w-5 h-5  cursor-pointer" />
       </div>
 
       <div className="w-full py-5 px-4 text-center flex justify-center items-center">
 
-        <div className="relative w-12 h-12 bg-white border border-gray-400 rounded-full overflow-hidden">
+        <div className="relative w-12 h-12 bg-white border border-gray-400 rounded-full overflow-hidden  cursor-pointer">
           <div className="absolute w-6 h-6 bg-black border border-gray-400 top-0 left-0"><img src={User1} alt="user1" /></div>
           <div className="absolute w-6 h-6 bg-black border border-gray-400 bottom-0 left-0"><img src={User2} alt="user2" /></div>
           <div className="absolute w-6 h-6 bg-black border border-gray-400 top-6 left-6"><img src={User3} alt="user3" /></div>
@@ -38,16 +38,16 @@ function Header() {
         <div className="flex flex-col justify-start flex-grow ml-4 ">
           <div className="flex">
             <div className="text-gray-600 font-medium">From</div>
-            <div className="font-bold pl-1">{from}</div>
+            <div className="font-bold pl-1 cursor-pointer">{from}</div>
           </div>
 
           <div className="flex">
             <div className="text-gray-600 font-medium">To</div>
-            <div className="font-bold pl-1">{to}</div>
+            <div className="font-bold pl-1 cursor-pointer">{to}</div>
           </div>
         </div>
 
-        <div className="flex text-right p-2">
+        <div className="flex text-right p-2 cursor-pointer">
           <img src={Frame} alt="edit_icon" className="h-6" />
         </div>
       </div>

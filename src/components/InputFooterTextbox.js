@@ -14,11 +14,11 @@ const InputFooterTextbox = () => {
   
 
     return (
-        <div className=" duration-500 rounded-lg flex items-center shadow-md px-4 py-1 my-3 sticky bottom-3 mx-4 bg-white ">
+        <div className=" duration-500 rounded-lg flex items-center shadow-md px-4 py-1 my-3 fixed bottom-3 mx-4 bg-white ">
             <div className="flex items-start flex-1">
                 <input
                     type="text"
-                    className="px-3 py-2 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500 border-none"
+                    className=" px-3 py-2 border w-full border-gray-400 rounded-lg focus:outline-none focus:border-blue-500 border-none"
                     placeholder="Reply to @Rohit Yadav"
                 />
 
@@ -26,7 +26,7 @@ const InputFooterTextbox = () => {
 
             </div>
 
-            <div className="ml-4 " >
+            <div className="ml-4 cursor-pointer" >
 
             {showDiv && 
 
@@ -47,12 +47,12 @@ const InputFooterTextbox = () => {
                 </div>
 
             }
-            <div className="ml-4 " onClick={handleButtonClick}>
+            <div className="ml-4 cursor-pointer" onClick={handleButtonClick}>
                 <img src={inputfootericon1} className="h-5 w-5" alt="Icon"  />
             </div>
             </div>
 
-            <div className="ml-4">
+            <div className="ml-4 cursor-pointer">
                 <img src={inputfootericon2} className="h-5 w-5" alt="Icon" />
             </div>
 
