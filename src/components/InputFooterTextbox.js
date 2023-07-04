@@ -14,7 +14,7 @@ const InputFooterTextbox = () => {
   
 
     return (
-        <div className=" duration-500 rounded-lg flex items-center shadow-md px-4 py-1 my-3 fixed bottom-3 mx-4 bg-white ">
+        <div className=" duration-500 rounded-lg flex items-center shadow-md px-4 py-1 my-3 fixed left-0 right-0 bottom-3 mx-4 bg-white ">
             <div className="flex items-start flex-1">
                 <input
                     type="text"
