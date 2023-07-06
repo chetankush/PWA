@@ -28,10 +28,10 @@ function Header() {
       <div className="w-full py-5 px-4 text-center flex justify-center items-center">
 
         <div className="relative w-12 h-12 bg-white border border-gray-400 rounded-full overflow-hidden  cursor-pointer">
-          <div className="absolute w-6 h-6 bg-black border border-gray-400 top-0 left-0"><img src={User1} alt="user1" /></div>
-          <div className="absolute w-6 h-6 bg-black border border-gray-400 bottom-0 left-0"><img src={User2} alt="user2" /></div>
-          <div className="absolute w-6 h-6 bg-black border border-gray-400 top-6 left-6"><img src={User3} alt="user3" /></div>
-          <div className="absolute w-6 h-6 bg-black border border-gray-400 bottom-6 left-6"><img src={User4} alt="user4" /></div>
+          <div className="absolute w-6 h-6 bg-white top-0 left-0"><img src={User1} alt="user1" /></div>
+          <div className="absolute w-6 h-6 bg-white bottom-0 left-0"><img src={User2} alt="user2" /></div>
+          <div className="absolute w-6 h-6 bg-white top-6 left-6"><img src={User3} alt="user3" /></div>
+          <div className="absolute w-6 h-6 bg-white bottom-6 left-6"><img src={User4} alt="user4" /></div>
         </div>
 
 

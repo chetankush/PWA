@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import userimage from '../assets/images/Component2_Rectangle_12_1.png';
 import verified_icon from '../assets/icons/vtick.png';
 import { useGlobalContext } from '../context';
 import InfiniteScroll from 'react-infinite-scroll-component';
@@ -10,20 +9,19 @@ const TextMsg = () => {
   const [hasMore, setHasMore] = useState(true);
 
   const fetchMoreData = async () => {
-    try {
+    try { 
       const response = await axios.get(
         'https://qa.corider.in/assignment/chat'
       );
       const jsonData = response.data;
       const newChats = jsonData.chats.slice(
         chats.length,
-        chats.length + 4 // Load 4 more chats
+         // Load 4 more chats
       );
       if (newChats.length === 0) {
         setHasMore(false); // No more chats to load
       } else {
         setChats([...chats, ...newChats]); // Append new chats to the existing chats array
-        console.log(chats);
       }
     } catch (error) {
       console.log('Error:', error);
@@ -35,10 +33,10 @@ const TextMsg = () => {
       dataLength={chats.length}
       next={fetchMoreData}
       hasMore={hasMore}
-      loader={<h4>Loading...</h4>}
+      loader={<h4 style={{ textAlign: 'center' }}>Loading...</h4>}
       endMessage={<p style={{ textAlign: 'center' }}>No more chats to load.</p>}
     >
-    {chats.map((chat) => (
+      {chats.map((chat) => (
         <div className="flex text-left mx-4 my-4" key={chat.id}>
           <div className="flex items-center justify-between align-top">
             <div className="w-12 h-12">
@@ -66,3 +64,7 @@ const TextMsg = () => {
 };
 
 export default TextMsg;
+
+
+
+
